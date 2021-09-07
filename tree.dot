@@ -1,0 +1,12 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="Largura pétala (cm) <= 0.75\ngini = 0.663\nsamples = 90\nvalue = [34, 27, 29]\nclass = Setosa", fillcolor="#fdf5ef"] ;
+1 [label="gini = 0.0\nsamples = 34\nvalue = [34, 0, 0]\nclass = Setosa", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Tamanho pétala (cm) <= 5.05\ngini = 0.499\nsamples = 56\nvalue = [0, 27, 29]\nclass = Virginica", fillcolor="#f6f1fd"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gini = 0.128\nsamples = 29\nvalue = [0, 27, 2]\nclass = Versicolor", fillcolor="#48e78a"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 27\nvalue = [0, 0, 27]\nclass = Virginica", fillcolor="#8139e5"] ;
+2 -> 4 ;
+}
