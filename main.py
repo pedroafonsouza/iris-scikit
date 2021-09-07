@@ -46,7 +46,7 @@ plt.ylim(y_min, y_max)
 plt.xticks(())
 plt.yticks(())
 
-# plt.show()
+plt.show()
 
 data = load_iris()
 df = pd.DataFrame(data.data, columns=data.feature_names)
